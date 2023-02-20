@@ -7,12 +7,14 @@ const {gets,print} = require('./fucoesauxiliares.js')
 
 const media = gets();
 
-if(media < 5){
+if(media >=0 && media < 5){
     print('reprovado');
 }
 else if(media>= 5 && media<7){
     print('recuperação');
 }
-else{
+else if( media >= 7){
     print('APROVADO!!!!!')
+}else{
+    print('Numero invalido')
 }
